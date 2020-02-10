@@ -1,2 +1,8 @@
 # T1909M_eProject-FANoFAN
-Welcome mail and eProject Specification - HTML5 - FANoFAN
+Welcome eProject Specification - HTML5 - FANoFAN
+
+Thành viên:
+  Nguyễn Đình Hiếu
+  Lê Thanh Tùng
+  Vũ Quang Huy
+  Phạm Tuân
