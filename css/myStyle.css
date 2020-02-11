@@ -1,0 +1,202 @@
+/* Hieu iceTea */
+
+
+/* Xử lý font */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("/font/OpenSans-Light.ttf");
+}
+
+
+/* END Xử lý font */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+
+/* Xử lý menu nav bar */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* END Xử lý menu nav bar */
+
+
+/* Xử lý list-product-title */
+
+.list-product-title {
+    width: 100%;
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.list-product-subtitle {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* END Xử lý list-product-title */
+
+
+/* Xử lý Card Product */
+
+.card-product {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-title {
+    /* !important */
+    margin-bottom: 0.25rem;
+}
+
+.product-price {
+    margin-bottom: 5px;
+}
+
+.del-price {
+    text-decoration: line-through;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.new-price {
+    color: #e07020;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.sale-sticky {
+    color: white;
+    background-color: #f90;
+    display: block;
+    text-align: center;
+    width: 120px;
+    position: absolute;
+    top: 10px;
+    right: -38px;
+    transform: rotate(45deg);
+}
+
+.product-image {
+    overflow: hidden;
+}
+
+.card-product img {
+    transition: all 0.6s ease;
+}
+
+.card-product:hover img {
+    transform: scale(1.5) rotate(5deg);
+}
+
+
+/* END Xử lý Card Product */
+
+
+/* footer */
+
+.page-footer {
+    color: #4f4f4f;
+    background-color: #eceff1;
+}
+
+.page-footer hr {
+    background-color: #1de9b6;
+}
+
+.page-footer a {
+    color: #4f4f4f;
+    text-decoration: none !important;
+    -webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+    display: inline-block;
+}
+
+.footer-title a:hover {
+    font-size: 30px;
+    margin: -20px -6px;
+}
+
+.footer-content a:hover {
+    color: #21d192;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.footer-copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* end footer */
+
+
+/* Xử lý nút mua hàng trôi nổi */
+
+.btn-cart-float {
+    position: fixed;
+    width: 90px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0C9;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    opacity: 0.7;
+}
+
+.btn-cart-float i {
+    display: inline-block;
+    font-size: 1.50rem;
+    margin-top: 19px;
+}
+
+.btn-cart-float .noti-sticky {
+    color: white;
+    background-color: #f90;
+    display: block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    opacity: 0.9;
+}
+
+.btn-cart-float:hover {
+    opacity: 1;
+}
+
+
+/* END Xử lý nút mua hàng trôi nổi */
