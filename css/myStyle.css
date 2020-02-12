@@ -200,3 +200,30 @@
 
 
 /* END Xử lý nút mua hàng trôi nổi */
+
+
+/* tuan */
+
+.my-link a {
+    color: #4f4f4f;
+    text-decoration: none !important;
+    -webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+    display: inline-block;
+}
+
+.my-link a:hover {
+    color: #21d192;
+    margin-left: 5px;
+    font-weight: 700;
+}
+ .green{
+     background-color: green;
+ }
+.b-color{
+    background-color: ;
+}
+
+/* END tuan */
+
