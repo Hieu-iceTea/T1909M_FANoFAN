@@ -43,6 +43,35 @@ html {
     display: block;
 }
 
+.nav-item.active {
+    border-bottom: solid #1de9b6 3px;
+}
+
+.nav-item {
+    transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+    border-bottom: solid #1de9b6 3px;
+    color: #1de9b6 !important;
+}
+
+.dropdown-content {
+    overflow: hidden;
+    min-width: 120px;
+}
+
+.dropdown-item {
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+
+.dropdown-item:hover {
+    color: #1de9b6 !important;
+    margin-left: 4px;
+    font-weight: 600;
+}
+
 
 /* END Xử lý menu nav bar */
 
@@ -241,9 +270,11 @@ html {
 .pd {
     padding-top: 67px;
 }
-.sz{
+
+.sz {
     font-size: 200px;
 }
+
 
 /* END tuan */
 
