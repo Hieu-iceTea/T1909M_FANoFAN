@@ -15,9 +15,9 @@
 
 <body>
     <div style="background-color: aquamarine;">
-        <p class="mb-0 py-4 text-center text-uppercase">advertising area</p>
+        <p class="mb-0 py-4 text-center text-uppercase lang" key="ads">Advertising area</p>
     </div>
-
+        
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container">
@@ -54,10 +54,9 @@
                     </li>
                 </ul>
 
-                <select class="form-control-sm mr-3 select">
-                    <option>English</option>
-                    <option>Viet Nam</option>
-                </select>
+                    <button class="btn btn-info mx-1 translate" id="eng">English</button>
+                    <button class="btn btn-info mx-1 translate" id="vie">Tiếng Việt</button>
+                
 
                 <form class=" form-inline my-2 my-lg-0">
                     <input class="search-box form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
@@ -461,6 +460,25 @@
     <script src="js/popper.min.js"></script>
     <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
     <script src="js/myScripts.js"></script>
+    <script type="text/javascript" scr="jquery.min.js"></script>
+    <script type="text/javascript">
+        var arrLang = {
+            'eng' : {
+                'ads' : 'Advertising Area'
+            },
+            'vie' : {
+                'ads' : 'Dành cho quảng cáo'
+            }
+        };
+        $(function(){
+            $('.translate').click(function(){
+                var lang = $(this).attr('id');
+                $('.lang').each(function(index,element){
+                    $(this).text(arrLang[lang][$(this).attr('key')]);
+                });
+            });
+        });
+    </script> 
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
 </body>
