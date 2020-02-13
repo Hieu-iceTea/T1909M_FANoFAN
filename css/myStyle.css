@@ -303,5 +303,10 @@ html {
 
 /* Huy */
 
+.card-text {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* END Huy */
