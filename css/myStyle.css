@@ -248,7 +248,7 @@ html {
 
 /* Cart & Payment */
 .modal-maxwidth {
-    max-width: 900px !important;
+    max-width: 800px !important;
 }
 .rounded-lg {
     border-radius: 1rem;
