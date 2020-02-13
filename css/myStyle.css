@@ -261,6 +261,9 @@ html {
   .nav-pills .nav-link.active {
     color: #fff;
   }
+  .payment-note {
+      color : red ;
+  }
 /* end */
 
 
