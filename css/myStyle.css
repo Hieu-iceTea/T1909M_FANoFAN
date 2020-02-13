@@ -11,7 +11,7 @@ html {
 /* Xử lý font */
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     src: url("/font/OpenSans-Light.ttf");
 }
 
@@ -140,9 +140,9 @@ html {
 .page-footer a {
     color: #4f4f4f;
     text-decoration: none !important;
-    -webkit-transition: .3s all ease;
-    -moz-transition: .3s all ease;
-    transition: .3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    transition: 0.3s all ease;
     display: inline-block;
 }
 
@@ -173,8 +173,8 @@ html {
     height: 60px;
     bottom: 40px;
     right: 40px;
-    background-color: #0C9;
-    color: #FFF;
+    background-color: #0c9;
+    color: #fff;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
@@ -183,7 +183,7 @@ html {
 
 .btn-cart-float i {
     display: inline-block;
-    font-size: 1.50rem;
+    font-size: 1.5rem;
     margin-top: 19px;
 }
 
@@ -214,9 +214,9 @@ html {
 .my-link a {
     color: #4f4f4f;
     text-decoration: none !important;
-    -webkit-transition: .3s all ease;
-    -moz-transition: .3s all ease;
-    transition: .3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    transition: 0.3s all ease;
     display: inline-block;
 }
 
@@ -251,3 +251,13 @@ html {
     color: #111;
     border-bottom: 1px #000 dashed;
 }
+
+
+/* Huy */
+
+.card-body {
+    text-align: center;
+}
+
+
+/* END Huy */
