@@ -43,6 +43,35 @@ html {
     display: block;
 }
 
+.navbar-nav .active {
+    border-bottom: solid #1de9b6 3px;
+}
+
+.navbar-nav .nav-item {
+    transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-item:hover {
+    border-bottom: solid #1de9b6 3px;
+    color: #1de9b6;
+}
+
+.navbar-nav .dropdown-content {
+    overflow: hidden;
+    min-width: 120px;
+}
+
+.navbar-nav .dropdown-item {
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #1de9b6;
+    margin-left: 4px;
+    font-weight: 600;
+}
+
 
 /* END Xử lý menu nav bar */
 
@@ -247,32 +276,29 @@ html {
 
 
 /* Cart & Payment */
+
 .modal-maxwidth {
     max-width: 900px !important;
 }
+
 .rounded-lg {
     border-radius: 1rem;
-  }
-  
-  .nav-pills .nav-link {
-    color: #555;
-  }
-  
-  .nav-pills .nav-link.active {
-    color: #fff;
-  }
-  .payment-note {
-      color : red ;
-  }
-/* end */
-
-
-#side .nav-link.active,
-#side .nav-link:hover,
-#side .nav-link:focus {
-    color: #111;
-    border-bottom: 1px #000 dashed;
 }
+
+.nav-pills .nav-link {
+    color: #555;
+}
+
+.nav-pills .nav-link.active {
+    color: #fff;
+}
+
+.payment-note {
+    color: red;
+}
+
+
+/* end */
 
 
 /* Huy */

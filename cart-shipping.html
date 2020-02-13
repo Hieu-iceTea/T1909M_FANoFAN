@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart & Payment</title>
+    <title>Cart & Payment - FANoFAN</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
 
     <!-- Style Sheet -->
     <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
@@ -23,8 +24,8 @@
         <div class="container">
             <a class="navbar-brand" href="#">FANoFAN</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -45,281 +46,362 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">User</a>
+                        <a class="nav-link dropdown-toggle" href="user-login-register.html" id="navbarDropdown">User</a>
                         <div class="dropdown-content">
-                            <a class="dropdown-item" href="#">Login</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Register</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registerModal">Register</a>
                         </div>
                     </li>
                 </ul>
+
                 <select class="form-control-sm mr-3 select">
-                    <option>English</option>
-                    <option>Viet Nam</option>
-                </select>
+                  <option>English</option>
+                  <option>Viet Nam</option>
+              </select>
 
                 <form class=" form-inline my-2 my-lg-0">
                     <input class="search-box form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0 " type="submit"><span class="fa fa-search"></span></button>
                 </form>
-
-
-
             </div>
         </div>
     </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form class="text-center border border-light p-5" action="#!">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <p class="h4 mb-4">Sign in</p>
+                    <input type="email" id="LoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <input type="password" id="LoginFormPassword" class="form-control mb-4" placeholder="Password">
+                    <div class="d-flex justify-content-around">
+                        <div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="LoginFormRemember">
+                                <label class="custom-control-label" for="LoginFormRemember">Remember me</label>
+                            </div>
+                        </div>
+                        <div> <a href="" data-toggle="modal" data-target="#forgotPasswordModal">Forgot password?</a> </div>
+                    </div>
+                    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+                    <p>Not a member? <a href="" data-toggle="modal" data-target="#registerModal">Register</a> </p>
+
+                    <p>or sign in with:</p>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END Login Modal -->
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form class="border border-light p-5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <p class="h4 mb-4 text-center">Sign up</p>
+                    <input type="text" id="defaultRegisterFormFirstName" class="form-control mb-2" placeholder="First name">
+                    <input type="text" id="defaultRegisterFormLastName" class="form-control mb-2" placeholder="Last name">
+                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Minimal 8 characters lenght</small>
+                    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Optional - for two step authentication</small>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+                    </div>
+                    <button class="btn btn-info my-4 btn-block" type="submit">Sign up</button>
+                    <div class="text-center">
+                        <p>or sign up with:</p>
+                        <a type="button" class="light-blue-text mx-2"> <i class="fab fa-facebook-f"></i> </a>
+                        <a type="button" class="light-blue-text mx-2"> <i class="fab fa-twitter"></i> </a>
+                        <a type="button" class="light-blue-text mx-2"> <i class="fab fa-linkedin-in"></i> </a>
+                        <a type="button" class="light-blue-text mx-2"> <i class="fab fa-github"></i> </a>
+                        <hr>
+                        <p>By clicking <em>Sign up</em> you agree to our <a href="" target="_blank">terms of service</a> and <a href="" target="_blank">terms of service</a>. </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END Register Modal -->
+
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form class="border border-light p-5">
+                    <div class="text-center">
+                        <p class="h4 mb-4">Forgot Password</p>
+                        <p>Enter your mail to reset your password</p>
+                        <p> See <a href="" target="_blank">terms of service</a> </p>
+                    </div>
+                    <input type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Name">
+                    <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <button class="btn btn-info btn-block" type="submit">Sent mail</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END Register Modal -->
     <!-- END Nav Bar -->
 
 
 
     <!-- MAIN HERE -->
     <div class="container">
-    <div class="row">
-        <div class="col-md-8">
-            <div class="px-4 px-lg-0">
-                <!-- For demo purpose -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="px-4 px-lg-0">
+                    <!-- For demo purpose -->
 
-                <!-- End -->
-              
-                <div class="pb-5">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
-              
-                        <!-- Shopping cart table -->
-                        <div class="table-responsive">
-                          <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col" class="border-0 bg-light">
-                                  <div class="p-2 px-3 text-uppercase">Product</div>
-                                </th>
-                                <th scope="col" class="border-0 bg-light">
-                                  <div class="py-2 text-uppercase">Price</div>
-                                </th>
-                                <th scope="col" class="border-0 bg-light">
-                                  <div class="py-2 text-uppercase">Quantity</div>
-                                </th>
-                                <th scope="col" class="border-0 bg-light">
-                                  <div class="py-2 text-uppercase">Remove</div>
-                                </th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row" class="border-0">
-                                  <div class="p-2">
-                                    <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-1_zrifhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                                    <div class="ml-3 d-inline-block align-middle">
-                                      <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Timex Unisex Originals</a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <td class="border-0 align-middle"><strong>$79.00</strong></td>
-                                <td class="border-0 align-middle"><strong>3</strong></td>
-                                <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                  <div class="p-2">
-                                    <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-3_cexmhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                                    <div class="ml-3 d-inline-block align-middle">
-                                      <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">Lumix camera lense</a></h5><span class="text-muted font-weight-normal font-italic">Category: Electronics</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <td class="align-middle"><strong>$79.00</strong></td>
-                                <td class="align-middle"><strong>3</strong></td>
-                                <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                  <div class="p-2">
-                                    <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-2_qxjis2.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                                    <div class="ml-3 d-inline-block align-middle">
-                                      <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Gray Nike running shoe</a></h5><span class="text-muted font-weight-normal font-italic">Category: Fashion</span>
-                                    </div>
-                                  </div>
-                                  <td class="align-middle"><strong>$79.00</strong></td>
-                                  <td class="align-middle"><strong>3</strong></td>
-                                  <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
-                                  </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <!-- End -->
-                      </div>
-                    </div>
-              
-                    
-              
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div class="col-md-4">
-            <div class="row py-5 p-4 bg-white rounded shadow-sm">
-                <div>
-                  <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
-                  <div class="p-4">
-                    <p class="font-italic mb-4">Shipping and additional costs are calculated based on values you have entered.</p>
-                    <ul class="list-unstyled mb-4">
-                      <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>$390.00</strong></li>
-                      <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping and handling</strong><strong>$10.00</strong></li>
-                      <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong><strong>$0.00</strong></li>
-                      <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
-                        <h5 class="font-weight-bold">$400.00</h5>
-                      </li>
-                    </ul><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Confirm Payment
-                      </button>
-                      
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-maxwidth" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Payment Information</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container py-5">
+                    <!-- End -->
 
-                                    <!-- For demo purpose -->
-                                    <div class="row mb-4">
+                    <div class="pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+
+                                    <!-- Shopping cart table -->
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="border-0 bg-light">
+                                                        <div class="p-2 px-3 text-uppercase">Product</div>
+                                                    </th>
+                                                    <th scope="col" class="border-0 bg-light">
+                                                        <div class="py-2 text-uppercase">Price</div>
+                                                    </th>
+                                                    <th scope="col" class="border-0 bg-light">
+                                                        <div class="py-2 text-uppercase">Quantity</div>
+                                                    </th>
+                                                    <th scope="col" class="border-0 bg-light">
+                                                        <div class="py-2 text-uppercase">Remove</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="border-0">
+                                                        <div class="p-2">
+                                                            <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-1_zrifhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                            <div class="ml-3 d-inline-block align-middle">
+                                                                <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Timex Unisex Originals</a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <td class="border-0 align-middle"><strong>$79.00</strong></td>
+                                                    <td class="border-0 align-middle"><strong>3</strong></td>
+                                                    <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class="p-2">
+                                                            <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-3_cexmhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                            <div class="ml-3 d-inline-block align-middle">
+                                                                <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">Lumix camera lense</a></h5><span class="text-muted font-weight-normal font-italic">Category: Electronics</span>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <td class="align-middle"><strong>$79.00</strong></td>
+                                                    <td class="align-middle"><strong>3</strong></td>
+                                                    <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class="p-2">
+                                                            <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-2_qxjis2.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                            <div class="ml-3 d-inline-block align-middle">
+                                                                <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Gray Nike running shoe</a></h5><span class="text-muted font-weight-normal font-italic">Category: Fashion</span>
+                                                            </div>
+                                                        </div>
+                                                        <td class="align-middle"><strong>$79.00</strong></td>
+                                                        <td class="align-middle"><strong>3</strong></td>
+                                                        <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+                                                        </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                     <!-- End -->
-                                  
-                                  
-                                    <div class="row">
-                                      <div class="col-lg-9 mx-auto">
-                                        <div class="bg-white rounded-lg shadow-sm p-5">
-                                          <!-- Credit card form tabs -->
-                                          <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
-                                            <li class="nav-item">
-                                              <a data-toggle="pill" href="#nav-tab-card" class="nav-link active rounded-pill">
-                                                                  <i class="fa fa-credit-card"></i>
-                                                                  Credit Card
-                                                              </a>
-                                            </li>
-                                            <li class="nav-item">
-                                              <a data-toggle="pill" href="#nav-tab-paypal" class="nav-link rounded-pill">
-                                                                  <i class="fa fa-paypal"></i>
-                                                                  Paypal
-                                                              </a>
-                                            </li>
-                                            <li class="nav-item">
-                                              <a data-toggle="pill" href="#nav-tab-bank" class="nav-link rounded-pill">
-                                                                  <i class="fa fa-university"></i>
-                                                                   Bank Transfer
-                                                               </a>
-                                            </li>
-                                          </ul>
-                                          <!-- End -->
-                                  
-                                  
-                                          <!-- Credit card form content -->
-                                          <div class="tab-content">
-                                  
-                                            <!-- credit card info-->
-                                            <div id="nav-tab-card" class="tab-pane fade show active">
-                                              <form role="form">
-                                                <div class="form-group">
-                                                  <label for="username">Full name (On the card)</label>
-                                                  <input type="text" name="username" placeholder="Le Thanh Tung" required class="form-control">
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row py-5 p-4 bg-white rounded shadow-sm">
+                    <div>
+                        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
+                        <div class="p-4">
+                            <p class="font-italic mb-4">Shipping and additional costs are calculated based on values you have entered.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>$390.00</strong></li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping and handling</strong><strong>$10.00</strong></li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong><strong>$0.00</strong></li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+                                    <h5 class="font-weight-bold">$400.00</h5>
+                                </li>
+                            </ul><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Confirm Payment
+                      </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-maxwidth" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Payment Information</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container py-5">
+
+                                                <!-- For demo purpose -->
+                                                <div class="row mb-4">
                                                 </div>
-                                                <div class="form-group">
-                                                  <label for="cardNumber">Card number</label>
-                                                  <div class="input-group">
-                                                    <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
-                                                    <div class="input-group-append">
-                                                      <span class="input-group-text text-muted">
+                                                <!-- End -->
+
+
+                                                <div class="row">
+                                                    <div class="col-lg-9 mx-auto">
+                                                        <div class="bg-white rounded-lg shadow-sm p-5">
+                                                            <!-- Credit card form tabs -->
+                                                            <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
+                                                                <li class="nav-item">
+                                                                    <a data-toggle="pill" href="#nav-tab-card" class="nav-link active rounded-pill">
+                                                                        <i class="fa fa-credit-card"></i> Credit Card
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a data-toggle="pill" href="#nav-tab-paypal" class="nav-link rounded-pill">
+                                                                        <i class="fa fa-paypal"></i> Paypal
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a data-toggle="pill" href="#nav-tab-bank" class="nav-link rounded-pill">
+                                                                        <i class="fa fa-university"></i> Bank Transfer
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- End -->
+
+
+                                                            <!-- Credit card form content -->
+                                                            <div class="tab-content">
+
+                                                                <!-- credit card info-->
+                                                                <div id="nav-tab-card" class="tab-pane fade show active">
+                                                                    <form role="form">
+                                                                        <div class="form-group">
+                                                                            <label for="username">Full name (On the card)</label>
+                                                                            <input type="text" name="username" placeholder="Le Thanh Tung" required class="form-control">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label for="cardNumber">Card number</label>
+                                                                            <div class="input-group">
+                                                                                <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text text-muted">
                                                                                   <i class="fa fa-cc-visa mx-1"></i>
                                                                                   <i class="fa fa-cc-amex mx-1"></i>
                                                                                   <i class="fa fa-cc-mastercard mx-1"></i>
                                                                               </span>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-sm-8">
-                                                    <div class="form-group">
-                                                      <label><span class="hidden-xs">Expiration</span></label>
-                                                      <div class="input-group">
-                                                        <input type="number" placeholder="MM" name="" class="form-control" required>
-                                                        <input type="number" placeholder="YY" name="" class="form-control" required>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                    <div class="form-group mb-4">
-                                                      <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-8">
+                                                                                <div class="form-group">
+                                                                                    <label><span class="hidden-xs">Expiration</span></label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" placeholder="MM" name="" class="form-control" required>
+                                                                                        <input type="number" placeholder="YY" name="" class="form-control" required>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                <div class="form-group mb-4">
+                                                                                    <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
                                                                                   <i class="fa fa-question-circle"></i>
                                                                               </label>
-                                                      <input type="text" required class="form-control">
+                                                                                    <input type="text" required class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+
+
+                                                                        </div>
+                                                                        <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
+                                                                    </form>
+                                                                </div>
+                                                                <!-- End -->
+
+                                                                <!-- Paypal info -->
+                                                                <div id="nav-tab-paypal" class="tab-pane fade">
+                                                                    <p>Paypal is easiest way to pay online</p>
+                                                                    <p>
+                                                                        <button type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Log into my Paypal</button>
+                                                                    </p>
+                                                                    <p class="payment-note">Your account has 2-layer security, we do not save any information about you</p>
+                                                                </div>
+                                                                <!-- End -->
+
+                                                                <!-- bank transfer info -->
+                                                                <div id="nav-tab-bank" class="tab-pane fade">
+                                                                    <h6>Bank account details</h6>
+                                                                    <dl>
+                                                                        <dt>Bank</dt>
+                                                                        <dd> THE WORLD BANK</dd>
+                                                                    </dl>
+                                                                    <dl>
+                                                                        <dt>Account number</dt>
+                                                                        <dd>7775877975</dd>
+                                                                    </dl>
+                                                                    <dl>
+                                                                        <dt>Account Balance</dt>
+                                                                        <dd>1,000,000,000 USD</dd>
+                                                                    </dl>
+                                                                    <p class="payment-note">Account balances are accepted for worldwide payment</p>
+                                                                </div>
+                                                                <!-- End -->
+                                                            </div>
+                                                            <!-- End -->
+
+                                                        </div>
                                                     </div>
-                                                  </div>
-                                  
-                                  
-                                  
                                                 </div>
-                                                <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
-                                              </form>
                                             </div>
-                                            <!-- End -->
-                                  
-                                            <!-- Paypal info -->
-                                            <div id="nav-tab-paypal" class="tab-pane fade">
-                                              <p>Paypal is easiest way to pay online</p>
-                                              <p>
-                                                <button type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Log into my Paypal</button>
-                                              </p>
-                                              <p class="payment-note">Your account has 2-layer security, we do not save any information about you</p>
-                                            </div>
-                                            <!-- End -->
-                                  
-                                            <!-- bank transfer info -->
-                                            <div id="nav-tab-bank" class="tab-pane fade">
-                                              <h6>Bank account details</h6>
-                                              <dl>
-                                                <dt>Bank</dt>
-                                                <dd> THE WORLD BANK</dd>
-                                              </dl>
-                                              <dl>
-                                                <dt>Account number</dt>
-                                                <dd>7775877975</dd>
-                                              </dl>
-                                              <dl>
-                                                <dt>Account Balance</dt>
-                                                <dd>1,000,000,000 USD</dd>
-                                              </dl>
-                                            <p class="payment-note">Account balances are accepted for worldwide payment</p>
-                                            </div>
-                                            <!-- End -->
-                                          </div>
-                                          <!-- End -->
-                                  
                                         </div>
-                                      </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Payment</button>
+                                        </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary" data-dismiss="modal">Payment</button>
-                            </div>
-                          </div>
                         </div>
-                      </div>
-                  </div>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
-    </div>
     </div>
 
 
@@ -410,8 +492,8 @@
     <script src="js/myScripts.js"></script>
     <script>
         $(function() {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+            $('[data-toggle="tooltip"]').tooltip()
+        })
     </script>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
