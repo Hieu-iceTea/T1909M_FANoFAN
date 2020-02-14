@@ -276,6 +276,9 @@ html {
 .br-grey {
     background-color: #f3eded;
 }
+.sz{
+    font-size: 200px;
+}
 
 .star {
     color: #f90;
@@ -284,7 +287,21 @@ html {
 .pd {
     padding-top: 67px;
 }
-
+.s-phone{
+    width: auto;
+    height: 57px;
+    text: center;
+    padding-top: 17px;
+}
+.s-buy{
+    width: 300px;
+}
+th{
+    width: 200px;
+}
+ul{
+    list-style: none;
+}
 
 /* END tuan */
 
