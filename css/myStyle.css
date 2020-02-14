@@ -259,12 +259,14 @@ html {
     -moz-transition: 0.3s all ease;
     transition: 0.3s all ease;
     display: inline-block;
+    cursor: pointer !important;
 }
 
 .my-link a:hover {
     color: #21d192;
     margin-left: 5px;
     font-weight: 700;
+    
 }
 
 .green {
@@ -311,6 +313,29 @@ html {
 
 
 /* end */
+/* about*/
+.factory-image {
+    background-image: url("/img/factory.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+    width: 100%;
+}
+.factory-icon {
+    text-align: center;
+    text-shadow: currentColor;
+    color: whitesmoke;
+    font-size: 5rem;
+    text-decoration: none;
+}
+.factory-p {
+    font-size: 5rem;
+    color : whitesmoke;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+/*end*/
 
 
 /* Huy */
