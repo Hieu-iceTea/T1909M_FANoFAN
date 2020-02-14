@@ -266,7 +266,6 @@ html {
     color: #21d192;
     margin-left: 5px;
     font-weight: 700;
-    
 }
 
 .green {
@@ -330,7 +329,10 @@ ul{
 
 
 /* end */
+
+
 /* about*/
+
 .factory-image {
     background-image: url("/img/factory.jpg");
     background-size: cover;
@@ -338,6 +340,7 @@ ul{
     height: 500px;
     width: 100%;
 }
+
 .factory-icon {
     text-align: center;
     text-shadow: currentColor;
@@ -345,20 +348,23 @@ ul{
     font-size: 5rem;
     text-decoration: none;
 }
+
 .factory-p {
     font-size: 5rem;
-    color : whitesmoke;
+    color: whitesmoke;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 20px;
 }
+
+
 /*end*/
 
 
 /* Huy */
 
 .my-aside-menu .card-header {
-    background-color: teal !important;
+    background-color: #1de9b6 !important;
     color: white;
     font-size: 1.2rem;
 }
