@@ -37,6 +37,14 @@ html {
 
 /* Xử lý menu nav bar */
 
+
+/* LOGO */
+
+.my-navbar .navbar-brand img {
+    width: 138px;
+    height: 35px;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
