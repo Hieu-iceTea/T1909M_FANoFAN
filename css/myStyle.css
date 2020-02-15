@@ -355,7 +355,9 @@ img {
 .s-buy {
     width: 300px;
 }
-
+.dot{
+    list-style: none;
+}
 
 /* END Tuân */
 
