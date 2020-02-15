@@ -260,7 +260,7 @@ img {
     color: #fff;
     border-radius: 50px;
     text-align: center;
-    box-shadow: 4px 4px 6px #999;
+    box-shadow: 4px 4px 6px #3d3b3b;
     opacity: 0.75;
     transition: 0.2s all ease-in-out;
 }
@@ -285,6 +285,7 @@ img {
     top: -10px;
     right: -10px;
     opacity: 0.95;
+    box-shadow: 3px 1px 3px #999;
 }
 
 .btn-cart-float:hover i {
