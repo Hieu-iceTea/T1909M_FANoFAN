@@ -25,6 +25,16 @@ html {
 }
 
 
+/* Xử lý khu vực khuyến mãi */
+
+.area-promotion {
+    background-color: #82e9de;
+}
+
+
+/* Xử lý khu vực khuyến mãi */
+
+
 /* Xử lý menu nav bar */
 
 .dropdown {
@@ -44,7 +54,7 @@ html {
 }
 
 .my-navbar .active {
-    border-bottom: solid #1de9b6 3px;
+    border-bottom: solid #17a2b8 3px;
 }
 
 .my-navbar .nav-item {
@@ -54,8 +64,7 @@ html {
 }
 
 .my-navbar .nav-item:hover {
-    border-bottom: solid #1de9b6 3px;
-    color: #1de9b6;
+    border-bottom: solid #17a2b8 3px;
 }
 
 .my-navbar .dropdown-content {
@@ -69,7 +78,7 @@ html {
 }
 
 .my-navbar .dropdown-item:hover {
-    color: #1de9b6;
+    color: #00867d;
     margin-left: 4px;
     font-weight: 600;
 }
@@ -198,27 +207,27 @@ img {
 }
 
 .page-footer hr {
-    background-color: #1de9b6;
+    background-color: #4db6ac;
 }
 
-.page-footer a {
+.footer-title {
+    background-color: #00867d;
+}
+
+.footer-title a,
+.footer-copyright a {
     color: #4f4f4f;
     text-decoration: none !important;
     -webkit-transition: 0.3s all ease;
     -moz-transition: 0.3s all ease;
     transition: 0.3s all ease;
     display: inline-block;
+    cursor: pointer !important;
 }
 
 .footer-title a:hover {
     font-size: 30px;
     margin: -20px -6px;
-}
-
-.footer-content a:hover {
-    color: #21d192;
-    margin-left: 5px;
-    font-weight: 700;
 }
 
 .footer-copyright {
@@ -281,12 +290,6 @@ img {
     transform: scale(1.15);
 }
 
-
-/* END Xử lý nút mua hàng trôi nổi */
-
-
-/* tuan */
-
 .my-link a {
     color: #4f4f4f;
     text-decoration: none !important;
@@ -298,10 +301,19 @@ img {
 }
 
 .my-link a:hover {
-    color: #21d192;
+    color: #00867d;
     margin-left: 5px;
     font-weight: 700;
 }
+
+
+/* END Xử lý nút mua hàng trôi nổi */
+
+
+/* END Hieu iceTea */
+
+
+/* Tuân */
 
 .green {
     background-color: green;
@@ -335,7 +347,10 @@ img {
 }
 
 
-/* END tuan */
+/* END Tuân */
+
+
+/* Tùng */
 
 
 /* Cart & Payment */
@@ -361,10 +376,10 @@ img {
 }
 
 
-/* end */
+/* END Cart & Payment*/
 
 
-/* about*/
+/* about */
 
 .factory-image {
     background-image: url("/img/factory.jpg");
@@ -391,13 +406,16 @@ img {
 }
 
 
-/*end*/
+/*end about */
+
+
+/* END Tùng */
 
 
 /* Huy */
 
 .my-aside-menu .card-header {
-    background-color: #1de9b6 !important;
+    background-color: #4db6ac !important;
     color: white;
     font-size: 1.2rem;
 }
