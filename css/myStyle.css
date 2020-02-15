@@ -78,6 +78,7 @@ html {
 .my-navbar .dropdown-content {
     overflow: hidden;
     min-width: 120px;
+    z-index: 2;
 }
 
 .my-navbar .dropdown-item {
