@@ -43,34 +43,69 @@ html {
     display: block;
 }
 
-.navbar-nav .active {
+.my-navbar .active {
     border-bottom: solid #1de9b6 3px;
 }
 
-.navbar-nav .nav-item {
+.my-navbar .nav-item {
     transition: all 0.2s ease;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }
 
-.navbar-nav .nav-item:hover {
+.my-navbar .nav-item:hover {
     border-bottom: solid #1de9b6 3px;
     color: #1de9b6;
 }
 
-.navbar-nav .dropdown-content {
+.my-navbar .dropdown-content {
     overflow: hidden;
     min-width: 120px;
 }
 
-.navbar-nav .dropdown-item {
+.my-navbar .dropdown-item {
     transition: all 0.2s ease;
     overflow: hidden;
 }
 
-.navbar-nav .dropdown-item:hover {
+.my-navbar .dropdown-item:hover {
     color: #1de9b6;
     margin-left: 4px;
     font-weight: 600;
 }
+
+.my-navbar .nav-link {
+    font-size: 1.15rem;
+}
+
+.my-navbar .dropdown-content {
+    margin-top: 3px;
+}
+
+.my-navbar {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* END Xử lý menu nav bar */
+
+
+/* Xử lý slide */
+
+.my-slide {
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+img {
+    /* max-height: 350px; */
+    /* object-fit: cover; */
+    /* justify-content: center; */
+}
+
+
+/* END Xử lý slide */
 
 
 /* END Xử lý menu nav bar */
@@ -275,7 +310,8 @@ html {
 .br-grey {
     background-color: #f3eded;
 }
-.sz{
+
+.sz {
     font-size: 200px;
 }
 
@@ -286,15 +322,18 @@ html {
 .pd {
     padding-top: 67px;
 }
-.s-phone{
+
+.s-phone {
     width: auto;
     height: 57px;
     text: center;
     padding-top: 17px;
 }
-.s-buy{
+
+.s-buy {
     width: 300px;
 }
+
 
 /* END tuan */
 

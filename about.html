@@ -15,11 +15,11 @@
 
 <body>
     <div style="background-color: aquamarine;">
-        <p class="mb-0 py-4 text-center text-uppercase">advertising area</p>
+        <p class="mb-0 py-4 text-center text-uppercase">Area Promotion</p>
     </div>
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top  py-1">
         <div class="container">
             <a class="navbar-brand" href="index.html">FANoFAN</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
             </button>
 
             <div class="collapse  navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav my-navbar mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -54,10 +54,14 @@
                     </li>
                 </ul>
 
-                <select class="form-control-sm mr-3 select">
-                    <option>English</option>
-                    <option>Viet Nam</option>
-                </select>
+                <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
+                    <label class="btn btn-outline-info btn-sm active">
+                      <input type="radio" name="options" id="option1" checked> VN
+                    </label>
+                    <label class="btn btn-outline-info btn-sm">
+                      <input type="radio" name="options" id="option2"> EN
+                    </label>
+                </div>
 
                 <form class=" form-inline my-2 my-lg-0">
                     <input class="search-box form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
@@ -168,7 +172,8 @@
         </div>
     </div>
     <div>
-        <iframe style="width: 100%; height: 300px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15680.579729025332!2d115.81771072981573!3d10.723302760778086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3180d691fcdf5b69%3A0x6634a41464120ce0!2zUXXhuqduIMSR4bqjbyBUcsaw4budbmcgU2E!5e0!3m2!1svi!2s!4v1581593261974!5m2!1svi!2s" width="1080" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe style="width: 100%; height: 300px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15680.579729025332!2d115.81771072981573!3d10.723302760778086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3180d691fcdf5b69%3A0x6634a41464120ce0!2zUXXhuqduIMSR4bqjbyBUcsaw4budbmcgU2E!5e0!3m2!1svi!2s!4v1581593261974!5m2!1svi!2s"
+            width="1080" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
 
 
@@ -262,7 +267,5 @@
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
 </body>
-
-
 
 </html>

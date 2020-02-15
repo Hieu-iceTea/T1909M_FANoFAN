@@ -15,11 +15,11 @@
 
 <body>
     <div style="background-color: aquamarine;">
-        <p class="mb-0 py-4 text-center text-uppercase lang" key="ads">Advertising area</p>
+        <p class="mb-0 py-4 text-center text-uppercase lang" key="ads">Area Promotion</p>
     </div>
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top  py-1">
         <div class="container">
             <a class="navbar-brand" href="index.html">FANoFAN</a>
             <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
     </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav myHome mr-auto">
+                <ul class="navbar-nav my-navbar myHome mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -54,10 +54,14 @@
                     </li>
                 </ul>
 
-                <select class="form-control-sm mr-3 select">
-            <option>English</option>
-            <option>Viet Nam</option>
-        </select>
+                <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
+                    <label class="btn btn-outline-info btn-sm active">
+                      <input type="radio" name="options" id="option1" checked> VN
+                    </label>
+                    <label class="btn btn-outline-info btn-sm">
+                      <input type="radio" name="options" id="option2"> EN
+                    </label>
+                </div>
 
                 <form class=" form-inline my-2 my-lg-0">
                     <input class="search-box form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
@@ -155,7 +159,7 @@
     <!-- END Nav Bar -->
 
     <!-- Slide show -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide my-slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -163,21 +167,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://via.placeholder.com/1920x530?text=Hieu iceTea" class="d-block w-100" alt="...">
+                <img src="img/slide/slide-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://via.placeholder.com/1920x530?text=Hieu iceTea" class="d-block w-100" alt="...">
+                <img src="img/slide/slide-2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://via.placeholder.com/1920x530?text=Hieu iceTea" class="d-block w-100" alt="...">
+                <img src="img/slide/slide-3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -209,7 +213,7 @@
                     <div class="col-md-3 col-sm-6 col-12">
                         <div class="card card-product mb-3 shadow-sm">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/280?text=Hieu iceTea" class="card-img-top" alt="product image">
+                                <img src="img/product/ceiling-fans-1.jpg" class="card-img-top" alt="product image">
                             </div>
                             <div class="card-body pt-3">
                                 <h5 class="card-title product-title mb-2">Product</h5>
@@ -228,7 +232,7 @@
                     <div class="col-md-3 col-sm-6 col-12">
                         <div class="card card-product mb-3 shadow-sm">
                             <div class="product-image">
-                                <img src="https://salt.tikicdn.com/cache/280x280/ts/product/1f/b2/58/2f469d312bfeaede1f49a04dbac96665.jpg" class="card-img-top" alt="product image">
+                                <img src="img/product/ceiling-fans-2.jpg" class="card-img-top" alt="product image">
                             </div>
                             <div class="card-body pt-3">
                                 <h5 class="card-title product-title mb-2">Product</h5>
@@ -248,7 +252,7 @@
                     <div class="col-md-3 col-sm-6 col-12">
                         <div class="card card-product mb-3 shadow-sm">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/280?text=Hieu iceTea" class="card-img-top" alt="product image">
+                                <img src="img/product/table-fan-1.jpg" class="card-img-top" alt="product image">
                             </div>
                             <div class="card-body pt-3">
                                 <h5 class="card-title product-title mb-2">Product</h5>
@@ -266,7 +270,7 @@
                     <div class="col-md-3 col-sm-6 col-12">
                         <div class="card card-product mb-3 shadow-sm">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/280?text=Hieu iceTea" class="card-img-top" alt="product image">
+                                <img src="img/product/table-fan-2.jpg" class="card-img-top" alt="product image">
                             </div>
                             <div class="card-body pt-3">
                                 <h5 class="card-title product-title mb-2">Product</h5>
@@ -299,7 +303,7 @@
                     <div class="col-md-3 col-sm-6 col-12">
                         <div class="card card-product mb-3 shadow-sm">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/280?text=Hieu iceTea" class="card-img-top" alt="product image">
+                                <img src="img/product/table-fan-3.jpg" class="card-img-top" alt="product image">
                             </div>
                             <div class="card-body pt-3">
                                 <h5 class="card-title product-title mb-2">Product</h5>
@@ -318,7 +322,7 @@
                     <div class="col-md-3 col-sm-6 col-12">
                         <div class="card card-product mb-3 shadow-sm">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/280?text=Hieu iceTea" class="card-img-top" alt="product image">
+                                <img src="img/product/table-fan-4.jpg" class="card-img-top" alt="product image">
                             </div>
                             <div class="card-body pt-3">
                                 <h5 class="card-title product-title mb-2">Product</h5>
@@ -337,7 +341,7 @@
                     <div class="col-md-3 col-sm-6 col-12">
                         <div class="card card-product mb-3 shadow-sm">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/280?text=Hieu iceTea" class="card-img-top" alt="product image">
+                                <img src="img/product/ceiling-fans-3.jpg" class="card-img-top" alt="product image">
                             </div>
                             <div class="card-body pt-3">
                                 <h5 class="card-title product-title mb-2">Product</h5>
@@ -357,7 +361,7 @@
                     <div class="col-md-3 col-sm-6 col-12">
                         <div class="card card-product mb-3 shadow-sm">
                             <div class="product-image">
-                                <img src="https://via.placeholder.com/280?text=Hieu iceTea" class="card-img-top" alt="product image">
+                                <img src="img/product/ceiling-fans-4.jpg" class="card-img-top" alt="product image">
                             </div>
                             <div class="card-body pt-3">
                                 <h5 class="card-title product-title mb-2">Product</h5>
@@ -377,7 +381,7 @@
     <!-- END List Product -->
 
     <div class="container text-center mb-5 mt-5">
-        <a href="#" class="btn btn-outline-info ">More Product >></a>
+        <a href="product-list.html" class="btn btn-outline-info ">More Product >></a>
     </div>
 
     <!-- Footer -->
