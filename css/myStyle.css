@@ -37,6 +37,14 @@ html {
 
 /* Xử lý menu nav bar */
 
+
+/* LOGO */
+
+.my-navbar .navbar-brand img {
+    width: 138px;
+    height: 35px;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -70,6 +78,7 @@ html {
 .my-navbar .dropdown-content {
     overflow: hidden;
     min-width: 120px;
+    z-index: 2;
 }
 
 .my-navbar .dropdown-item {
@@ -251,7 +260,7 @@ img {
     color: #fff;
     border-radius: 50px;
     text-align: center;
-    box-shadow: 4px 4px 6px #999;
+    box-shadow: 4px 4px 6px #3d3b3b;
     opacity: 0.75;
     transition: 0.2s all ease-in-out;
 }
@@ -276,6 +285,7 @@ img {
     top: -10px;
     right: -10px;
     opacity: 0.95;
+    box-shadow: 3px 1px 3px #999;
 }
 
 .btn-cart-float:hover i {
@@ -345,7 +355,9 @@ img {
 .s-buy {
     width: 300px;
 }
-
+.dot{
+    list-style: none;
+}
 
 /* END Tuân */
 
