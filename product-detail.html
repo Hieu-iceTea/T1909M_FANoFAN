@@ -81,8 +81,8 @@
                 <form class="text-center border border-light p-5" action="#!">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <p class="h4 mb-4">Sign in</p>
-                    <input type="email" id="LoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-                    <input type="password" id="LoginFormPassword" class="form-control mb-4" placeholder="Password">
+                    <input type="email" id="LoginFormEmail" class="form-control mb-4" placeholder="E-mail" required>
+                    <input type="password" id="LoginFormPassword" class="form-control mb-4" placeholder="Password" required>
                     <div class="d-flex justify-content-around">
                         <div>
                             <div class="custom-control custom-checkbox">
@@ -114,12 +114,12 @@
                 <form class="border border-light p-5">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <p class="h4 mb-4 text-center">Sign up</p>
-                    <input type="text" id="defaultRegisterFormFirstName" class="form-control mb-2" placeholder="First name">
-                    <input type="text" id="defaultRegisterFormLastName" class="form-control mb-2" placeholder="Last name">
-                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
-                    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <input type="text" id="defaultRegisterFormFirstName" class="form-control mb-2" placeholder="First name" required>
+                    <input type="text" id="defaultRegisterFormLastName" class="form-control mb-2" placeholder="Last name" required>
+                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" required>
+                    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" required>
                     <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Minimal 8 characters lenght</small>
-                    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock" required>
                     <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Optional - for two step authentication</small>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
@@ -152,7 +152,7 @@
                         <p> See <a href="" target="_blank">terms of service</a> </p>
                     </div>
                     <input type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Name">
-                    <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail" required>
                     <button class="btn btn-info btn-block" type="submit">Sent mail</button>
                 </form>
             </div>
