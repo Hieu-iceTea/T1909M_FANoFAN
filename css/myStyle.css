@@ -416,6 +416,31 @@ img {
     padding-top: 60px;
     padding-bottom: 20px;
 }
+.information-header {
+    background: #fff;
+    border-bottom: 1px solid #dcdddf;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    color: inherit;
+    font-weight: 400;
+    font-size: 3rem;
+    font-family: "Trade Gothic W01", Helvetica, arial, "Microsoft Yahei", 微软雅黑, STXihei, 华文细黑, sans-serif;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.8em;
+}
+.information-map {
+    padding-top: 5rem;
+}
+.information-data {
+    width: 100%;
+}
+.information-p {
+    padding-top: 2rem;
+    text-align: center;
+}
 
 
 /*end about */
