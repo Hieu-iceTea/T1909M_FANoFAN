@@ -348,16 +348,18 @@ img {
 .s-phone {
     width: auto;
     height: 57px;
-    text: center;
+    text-align: center;
     padding-top: 17px;
 }
 
 .s-buy {
     width: 300px;
 }
-.dot{
+
+.dot {
     list-style: none;
 }
+
 
 /* END Tuân */
 
@@ -416,6 +418,7 @@ img {
     padding-top: 60px;
     padding-bottom: 20px;
 }
+
 .information-header {
     background: #fff;
     border-bottom: 1px solid #dcdddf;
@@ -431,12 +434,15 @@ img {
     letter-spacing: 2px;
     font-size: 2.8em;
 }
+
 .information-map {
     padding-top: 5rem;
 }
+
 .information-data {
     width: 100%;
 }
+
 .information-p {
     padding-top: 2rem;
     text-align: center;
