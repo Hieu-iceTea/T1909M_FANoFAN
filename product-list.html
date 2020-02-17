@@ -19,7 +19,7 @@
     </div>
 
     <!-- Nav Bar -->
-    <nav class="navbar my-navbar navbar-expand-md navbar-light bg-light sticky-top py-1">
+    <nav class="navbar my-navbar navbar-expand-md navbar-light bg-light sticky-top py-1 shadow">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo-fanofan-color.png" alt="FANoFAN">
@@ -81,8 +81,8 @@
                 <form class="text-center border border-light p-5" action="#!">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <p class="h4 mb-4">Sign in</p>
-                    <input type="email" id="LoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-                    <input type="password" id="LoginFormPassword" class="form-control mb-4" placeholder="Password">
+                    <input type="email" id="LoginFormEmail" class="form-control mb-4" placeholder="E-mail" required>
+                    <input type="password" id="LoginFormPassword" class="form-control mb-4" placeholder="Password" required>
                     <div class="d-flex justify-content-around">
                         <div>
                             <div class="custom-control custom-checkbox">
@@ -100,6 +100,7 @@
                     <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
                     <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
                     <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
                 </form>
             </div>
         </div>
@@ -113,12 +114,12 @@
                 <form class="border border-light p-5">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <p class="h4 mb-4 text-center">Sign up</p>
-                    <input type="text" id="defaultRegisterFormFirstName" class="form-control mb-2" placeholder="First name">
-                    <input type="text" id="defaultRegisterFormLastName" class="form-control mb-2" placeholder="Last name">
-                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
-                    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <input type="text" id="defaultRegisterFormFirstName" class="form-control mb-2" placeholder="First name" required>
+                    <input type="text" id="defaultRegisterFormLastName" class="form-control mb-2" placeholder="Last name" required>
+                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" required>
+                    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" required>
                     <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Minimal 8 characters lenght</small>
-                    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock" required>
                     <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Optional - for two step authentication</small>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
@@ -151,7 +152,7 @@
                         <p> See <a href="" target="_blank">terms of service</a> </p>
                     </div>
                     <input type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Name">
-                    <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail" required>
                     <button class="btn btn-info btn-block" type="submit">Sent mail</button>
                 </form>
             </div>
@@ -163,9 +164,9 @@
 
     <!-- MAIN HERE -->
 
-    <div class="container ">
+    <div class="container mt-4">
         <div class="row ">
-            <aside class="col-md-3 col-12  mt-4 my-link my-aside-menu">
+            <aside class="col-md-3 col-12 my-link my-aside-menu">
                 <div class="card border-info mb-3">
                     <div class="card-header"> Ceiling Fans</div>
                     <div class="card-body text-info ">
@@ -177,22 +178,19 @@
                     </div>
                 </div>
 
-                <div class="card border-info mb-3 ">
-                    <div class="card-header ">Demand For Ceiling Fans</div>
+                <div class="card border-info mb-3">
+                    <div class="card-header ">Table Fan</div>
                     <div class="card-body text-info ">
-                        <a class="card-text" href="# ">Living Room Ceiling Fan</a> <br>
-                        <a class="card-text" href="# ">Bedroom Ceiling Fan</a> <br>
-                        <a class="card-text" href="# ">Dining Room Ceiling Fan</a> <br>
-                        <a class="card-text" href="# ">Fan For Low Ceiling</a> <br>
-                        <a class="card-text" href="# ">Outdoor Ceiling Fan</a> <br>
-                        <a class="card-text" href="# ">Ceiling Fans With Chandeliers</a> <br>
-                        <a class="card-text" href="# ">Big Wing Ceiling Fan</a> <br>
-                        <a class="card-text" href="# ">Ceiling Fan With Short Wings</a> <br>
+                        <a class="card-text" href="# ">Table fan with 3 wings</a> <br>
+                        <a class="card-text" href="# ">Table fan charged</a> <br>
+                        <a class="card-text" href="# ">High foot fan</a> <br>
+                        <a class="card-text" href="# ">Misting fan</a> <br>
+                        <a class="card-text" href="# ">Fans for outdoor</a> <br>
                     </div>
                 </div>
             </aside>
 
-            <main class="col-md-9 col-12 mt-4 ">
+            <main class="col-md-9 col-12">
                 <!-- List Product -->
                 <div class="container ">
                     <div class="row mb-3">
@@ -227,9 +225,9 @@
                                         </div>
                                         <div class="card-body pt-3 ">
                                             <h5 class="card-title product-title mb-2 ">ROYAL SOLID ceiling fan</h5>
-                                            <p class="card-text mb-2 ">High-class 5-blade wooden fan</p>
+                                            <p class="card-text mb-2 ">High-class 5-blade wooden fans.</p>
                                             <div class="card-text product-price mb-1 ">
-                                                <span class="new-price ">1499 $</span>
+                                                <span class="new-price ">1699 $</span>
                                             </div>
                                             <a href="# " class="btn btn-info "><i class="fa fa-cart-plus "></i></a>
                                             <a href="product-detail.html " class="btn btn-outline-info ">Show more</a>
@@ -247,8 +245,8 @@
                                             <h5 class="card-title product-title mb-2 ">ROYAL Samara LED WH fan</h5>
                                             <p class="card-text mb-2 "> Specialized ceiling design for low ceilings</p>
                                             <div class="card-text product-price mb-1 ">
-                                                <span class="del-price ">1450 $</span>
-                                                <span class="new-price ">1400 $</span>
+                                                <span class="del-price ">1.450 $</span>
+                                                <span class="new-price ">1.400 $</span>
                                             </div>
                                             <a href="# " class="btn btn-info "><i class="fa fa-cart-plus "></i></a>
                                             <a href="product-detail.html " class="btn btn-outline-info ">Show more</a>
@@ -267,7 +265,7 @@
                                             <h5 class="card-title product-title mb-2 ">Ceiling fan Royal Classic AB 3L</h5>
                                             <p class="card-text mb-2 "> 3 high quality wooden wings. Wood vaned blades</p>
                                             <div class="card-text product-price mb-1 ">
-                                                <span class="new-price ">1200 $</span>
+                                                <span class="new-price ">1.200 $</span>
                                             </div>
                                             <a href="# " class="btn btn-info "><i class="fa fa-cart-plus "></i></a>
                                             <a href="product-detail.html " class="btn btn-outline-info ">Show more</a>
@@ -297,10 +295,12 @@
                                             <h5 class="card-title product-title mb-2 ">Royal Aura ceiling fan F007</h5>
                                             <p class="card-text mb-2 "> installation of small room space, the fan looks like a high class decoration lamp</p>
                                             <div class="card-text product-price mb-1 ">
-                                                <span class="new-price ">1899 $</span>
+                                                <span class="del-price ">1.999 $</span>
+                                                <span class="new-price ">1.899 $</span>
                                             </div>
                                             <a href="# " class="btn btn-info "><i class="fa fa-cart-plus "></i></a>
                                             <a href="product-detail.html " class="btn btn-outline-info ">Show more</a>
+                                            <h3 class="sale-sticky ">Sale</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -315,12 +315,11 @@
                                             <h5 class="card-title product-title mb-2 ">Royal NAIROBI ceiling fans</h5>
                                             <p class="card-text mb-2 "> Classic style, Suitable for living room, villa, high class restaurant</p>
                                             <div class="card-text product-price mb-1 ">
-                                                <span class="del-price ">1199 $</span>
-                                                <span class="new-price ">1099 $</span>
+                                                <span class="new-price ">1.099 $</span>
                                             </div>
                                             <a href="# " class="btn btn-info "><i class="fa fa-cart-plus "></i></a>
                                             <a href="product-detail.html " class="btn btn-outline-info ">Show more</a>
-                                            <h3 class="sale-sticky ">Sale</h3>
+
                                         </div>
                                     </div>
                                 </div>
@@ -335,10 +334,12 @@
                                             <h5 class="card-title product-title mb-2 ">ROYAL IDOL AB ceiling fans</h5>
                                             <p class="card-text mb-2 "> Designed for small spaces, it is ideal for balconies, bathrooms and kitchens</p>
                                             <div class="card-text product-price mb-1 ">
-                                                <span class="new-price ">1999 $</span>
+                                                <span class="del-price ">1.999 $</span>
+                                                <span class="new-price ">1.569 $</span>
                                             </div>
                                             <a href="# " class="btn btn-info "><i class="fa fa-cart-plus "></i></a>
                                             <a href="product-detail.html " class="btn btn-outline-info ">Show more</a>
+                                            <h3 class="sale-sticky ">Sale</h3>
                                         </div>
                                     </div>
                                 </div>

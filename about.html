@@ -19,7 +19,7 @@
     </div>
 
     <!-- Nav Bar -->
-    <nav class="navbar my-navbar navbar-expand-md navbar-light bg-light sticky-top py-1">
+    <nav class="navbar my-navbar navbar-expand-md navbar-light bg-light sticky-top py-1 shadow">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo-fanofan-color.png" alt="FANoFAN">
@@ -81,8 +81,8 @@
                 <form class="text-center border border-light p-5" action="#!">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <p class="h4 mb-4">Sign in</p>
-                    <input type="email" id="LoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-                    <input type="password" id="LoginFormPassword" class="form-control mb-4" placeholder="Password">
+                    <input type="email" id="LoginFormEmail" class="form-control mb-4" placeholder="E-mail" required>
+                    <input type="password" id="LoginFormPassword" class="form-control mb-4" placeholder="Password" required>
                     <div class="d-flex justify-content-around">
                         <div>
                             <div class="custom-control custom-checkbox">
@@ -114,12 +114,12 @@
                 <form class="border border-light p-5">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <p class="h4 mb-4 text-center">Sign up</p>
-                    <input type="text" id="defaultRegisterFormFirstName" class="form-control mb-2" placeholder="First name">
-                    <input type="text" id="defaultRegisterFormLastName" class="form-control mb-2" placeholder="Last name">
-                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
-                    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <input type="text" id="defaultRegisterFormFirstName" class="form-control mb-2" placeholder="First name" required>
+                    <input type="text" id="defaultRegisterFormLastName" class="form-control mb-2" placeholder="Last name" required>
+                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" required>
+                    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" required>
                     <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Minimal 8 characters lenght</small>
-                    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock" required>
                     <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Optional - for two step authentication</small>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
@@ -152,7 +152,7 @@
                         <p> See <a href="" target="_blank">terms of service</a> </p>
                     </div>
                     <input type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Name">
-                    <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail" required>
                     <button class="btn btn-info btn-block" type="submit">Sent mail</button>
                 </form>
             </div>
@@ -182,11 +182,11 @@
                 <p class="information-p">We created a residential fan that blew away ENERGY STAR® ratings and won awards worldwide. In 2014, we had the bright idea to create an LED fixture made of heavy-duty anodized, extruded aluminum so it can handle whatever you can dish out, launching a division appropriately called Fan Light™.</p>
                 <p class="information-p">And we’ve backed everything with serious research, intensive engineering, and an almost obsessive drive to innovate and improve. No matter what we’re doing, we go hard every single day, and we’re not stopping.</p>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2 "></div>
         </div>
-        <div class="information-map">
-            <iframe style="width: 100%; height: 300px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15680.579729025332!2d115.81771072981573!3d10.723302760778086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3180d691fcdf5b69%3A0x6634a41464120ce0!2zUXXhuqduIMSR4bqjbyBUcsaw4budbmcgU2E!5e0!3m2!1svi!2s!4v1581593261974!5m2!1svi!2s"
-                width="1080" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div class="information-map ">
+            <iframe style="width: 100%; height: 300px; " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15680.579729025332!2d115.81771072981573!3d10.723302760778086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3180d691fcdf5b69%3A0x6634a41464120ce0!2zUXXhuqduIMSR4bqjbyBUcsaw4budbmcgU2E!5e0!3m2!1svi!2s!4v1581593261974!5m2!1svi!2s "
+                width="1080 " height="600 " frameborder="0 " style="border:0; " allowfullscreen=" "></iframe>
         </div>
 
 
@@ -195,25 +195,25 @@
 
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer ">
 
         <!-- footer title -->
-        <div class="footer-title" ">
-            <div class="container ">
-                <div class="row py-4 align-items-center text-light ">
-                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0 ">
-                        <h6 class="mb-0 ">Get connected with us on social networks!</h6>
-                    </div>
+        <div class="footer-title " ">
+                <div class="container ">
+                    <div class="row py-4 align-items-center text-light ">
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0 ">
+                            <h6 class="mb-0 ">Get connected with us on social networks!</h6>
+                        </div>
 
-                    <div class="col-md-6 col-lg-7 text-center text-md-right ">
-                        <a> <i class="fab fa-facebook-f mr-4 "></i> </a>
-                        <a> <i class="fab fa-twitter mr-4 "> </i> </a>
-                        <a> <i class="fab fa-google-plus-g mr-4 "></i> </a>
-                        <a> <i class="fab fa-linkedin-in mr-4 "> </i> </a>
-                        <a> <i class="fab fa-instagram "> </i></a>
+                        <div class="col-md-6 col-lg-7 text-center text-md-right ">
+                            <a> <i class="fab fa-facebook-f mr-4 "></i> </a>
+                            <a> <i class="fab fa-twitter mr-4 "> </i> </a>
+                            <a> <i class="fab fa-google-plus-g mr-4 "></i> </a>
+                            <a> <i class="fab fa-linkedin-in mr-4 "> </i> </a>
+                            <a> <i class="fab fa-instagram "> </i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
         </div>
 
         <!-- footer content -->
@@ -264,21 +264,21 @@
         <div class="footer-copyright text-center text-black-50 py-3 ">© 2020 Copyright:
             <a href="http://fb.com/Hieu.iceTea "> Hieu-iceTea.vn</a>
         </div>
-    </footer>
-    <!-- END Footer -->
+        </footer>
+        <!-- END Footer -->
 
-    <a href="cart-shipping.html " class="btn-cart-float ">
-        <i class="fa fa-shopping-cart "></i>
-        <h3 class="noti-sticky ">2</h3>
-    </a>
+        <a href="cart-shipping.html " class="btn-cart-float ">
+            <i class="fa fa-shopping-cart "></i>
+            <h3 class="noti-sticky ">2</h3>
+        </a>
 
-    <!-- Script -->
-    <script src="js/jquery-3.4.1.slim.min.js "></script>
-    <script src="js/popper.min.js "></script>
-    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js "></script>
-    <script src="js/myScripts.js "></script>
+        <!-- Script -->
+        <script src="js/jquery-3.4.1.slim.min.js "></script>
+        <script src="js/popper.min.js "></script>
+        <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js "></script>
+        <script src="js/myScripts.js "></script>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script> -->
 </body>
 
 </html>

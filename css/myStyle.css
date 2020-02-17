@@ -359,6 +359,11 @@ img {
 .dot {
     list-style: none;
 }
+.kt{
+    display: none;
+}.hv:hover > ul{
+    display: block;
+}
 
 
 /* END Tuân */
