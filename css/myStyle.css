@@ -364,6 +364,16 @@ img {
 }.hv:hover > ul{
     display: block;
 }
+.support-header {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.support-send-form {
+    padding-top: 1rem;
+}
 
 
 /* END Tuân */
