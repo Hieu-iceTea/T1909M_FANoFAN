@@ -292,8 +292,7 @@ html {
     transform: scale(1.15);
 }
 
-.my-link a,
-.my-link {
+.my-link a {
     color: #4f4f4f;
     text-decoration: none !important;
     -webkit-transition: 0.3s all ease;
@@ -303,8 +302,7 @@ html {
     cursor: pointer !important;
 }
 
-.my-link a:hover,
-.my-link:hover {
+.my-link a:hover {
     color: #00867d;
     margin-left: 5px;
     font-weight: 700;
