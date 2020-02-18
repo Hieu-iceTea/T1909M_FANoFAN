@@ -329,6 +329,22 @@ html {
     font-weight: 700;
 }
 
+.my-customer-review .my-link {
+    color: #4f4f4f;
+    text-decoration: none !important;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    display: inline-block;
+    cursor: pointer !important;
+}
+
+.my-customer-review .my-link:hover {
+    color: #00867d;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
 
 /* END Xử lý phần khách hàng bình luận về sản phẩm */
 
