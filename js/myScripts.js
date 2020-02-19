@@ -17,6 +17,10 @@ $(document).ready(function() {
     // document ready
 });
 
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
 /* Huy */
 
 $("#your-custom-id-button").mdbDropSearch();
