@@ -376,7 +376,8 @@ html {
 
 .my-our-team .our-team {
     padding: 20px 15px 30px;
-    background: whitesmoke;
+    /* background: #e3f2fdc5; */
+    background: #e8eaf6c5;
     border-radius: 15px;
     text-align: center;
 }
@@ -404,19 +405,31 @@ html {
 
 .my-our-team .our-team .title {
     display: block;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 600;
     color: #2e282a;
     text-transform: uppercase;
     margin: 0 0 7px 0;
+    transition: all 0.5s ease 0s;
+}
+
+.my-our-team .our-team:hover .title {
+    transform: scale(1.05);
 }
 
 .my-our-team .our-team .post {
     display: block;
-    font-size: 15px;
+    font-size: 16px;
+    /* font-weight: 500 !important; */
     color: #17bebb;
     text-transform: capitalize;
     margin-bottom: 15px;
+    transition: all 0.5s ease 0s;
+}
+
+.my-our-team .our-team:hover .post {
+    transform: scale(1.1);
+    color: #17a2b8;
 }
 
 .my-our-team .our-team .social {
