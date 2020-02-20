@@ -170,249 +170,193 @@
     <!-- END Register Modal -->
     <!-- END Nav Bar -->
 
-
-
     <!-- MAIN HERE -->
-    <div class="container">
+    <div class="container my-cart-shipping mt-5 mb-4">
+        <div class="row justify-content-center">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item mr-5">
+                    <a class="nav-link active" id="review-order-tab" data-toggle="pill" href="#review-order" role="tab" aria-controls="review-order" aria-selected="true"> <span class="num-step">1</span> Review Order</a>
+                </li>
+                <li class="nav-item  mr-5">
+                    <a class="nav-link" id="customer-info-tab" data-toggle="pill" href="#customer-info" role="tab" aria-controls="customer-info" aria-selected="false"> <span class="num-step">2</span> Customer Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="order-confirm-tab" data-toggle="pill" href="#order-confirm" role="tab" aria-controls="order-confirm" aria-selected="false"> <span class="num-step">3</span> Order Confirm</a>
+                </li>
+            </ul>
+        </div>
         <div class="row">
-            <div class="col-md-8">
-                <div class="px-4 px-lg-0">
-                    <!-- For demo purpose -->
-
-                    <!-- End -->
-
-                    <div class="pb-5">
+            <div class="col-md-12">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="review-order" role="tabpanel" aria-labelledby="review-order-tab">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
-
-                                    <!-- Shopping cart table -->
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col" class="border-0 bg-light">
-                                                        <div class="p-2 px-3 text-uppercase">Product</div>
-                                                    </th>
-                                                    <th scope="col" class="border-0 bg-light">
-                                                        <div class="py-2 text-uppercase">Price</div>
-                                                    </th>
-                                                    <th scope="col" class="border-0 bg-light">
-                                                        <div class="py-2 text-uppercase">Quantity</div>
-                                                    </th>
-                                                    <th scope="col" class="border-0 bg-light">
-                                                        <div class="py-2 text-uppercase">Remove</div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row" class="border-0">
-                                                        <div class="p-2">
-                                                            <img src="img/product/ceiling-fans-1.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                                                            <div class="ml-3 d-inline-block align-middle">
-                                                                <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">ROYAL SOLID</a></h5><span class="text-muted font-weight-normal font-italic d-block">Category:Ceiling Fan</span>
+                            <div class="row mt-3 mb-5">
+                                <div class="col-md-8">
+                                    <div class="p-3 bg-white rounded shadow-sm">
+                                        <!-- Shopping cart table -->
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="border-0 bg-light">
+                                                            <div class="p-2 px-3 text-uppercase">Product</div>
+                                                        </th>
+                                                        <th scope="col" class="border-0 bg-light">
+                                                            <div class="py-2 text-uppercase">Price</div>
+                                                        </th>
+                                                        <th scope="col" class="border-0 bg-light">
+                                                            <div class="py-2 text-uppercase">Quantity</div>
+                                                        </th>
+                                                        <th scope="col" class="border-0 bg-light">
+                                                            <div class="py-2 text-uppercase">Remove</div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" class="border-0">
+                                                            <div class="p-2">
+                                                                <img src="img/product/ceiling-fans-1.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                                <div class="ml-3 d-inline-block align-middle">
+                                                                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">ROYAL SOLID</a></h5><span class="text-muted font-weight-normal font-italic d-block">Category:Ceiling Fan</span>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </th>
-                                                    <td class="border-0 align-middle"><strong>$ 1.499.00</strong></td>
-                                                    <td class="border-0 align-middle"><strong>1</strong></td>
-                                                    <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="p-2">
-                                                            <img src="img/product/ceiling-fans-2.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                                                            <div class="ml-3 d-inline-block align-middle">
-                                                                <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">ROYAL Samara LED</a></h5><span class="text-muted font-weight-normal font-italic">Category: LED Fan</span>
+                                                        </th>
+                                                        <td class="border-0 align-middle"><strong>$ 1.499.00</strong></td>
+                                                        <td class="border-0 align-middle"><strong>1</strong></td>
+                                                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="p-2">
+                                                                <img src="img/product/ceiling-fans-2.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                                <div class="ml-3 d-inline-block align-middle">
+                                                                    <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">ROYAL Samara LED</a></h5><span class="text-muted font-weight-normal font-italic">Category: LED Fan</span>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </th>
-                                                    <td class="align-middle"><strong>$ 1.400.00</strong></td>
-                                                    <td class="align-middle"><strong>1</strong></td>
-                                                    <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="p-2">
-                                                            <img src="img/product/ceiling-fans-4.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                                                            <div class="ml-3 d-inline-block align-middle">
-                                                                <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Royal Aura F007</a></h5><span class="text-muted font-weight-normal font-italic">Ceiling Fan</span>
-                                                            </div>
-                                                        </div>
-                                                        <td class="align-middle"><strong>$ 1.899.00</strong></td>
+                                                        </th>
+                                                        <td class="align-middle"><strong>$ 1.400.00</strong></td>
                                                         <td class="align-middle"><strong>1</strong></td>
                                                         <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
                                                         </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- End -->
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row py-5 p-4 bg-white rounded shadow-sm">
-                    <div>
-                        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
-                        <div class="p-4">
-                            <p class="font-italic mb-4">Shipping and additional costs are calculated based on values you have entered.</p>
-                            <ul class="list-unstyled mb-4">
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong>
-                                    <strong>$ 4.798.00</strong></li>
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping and handling</strong>
-                                    <strong>$ 10.00</strong></li>
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong>
-                                    <strong>$ 0.00</strong></li>
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
-                                    <h5 class="font-weight-bold">$ 4.808.00</h5>
-                                </li>
-                            </ul><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Confirm Payment
-                      </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-maxwidth" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Payment Information</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="container py-5">
-
-                                                <!-- For demo purpose -->
-                                                <div class="row mb-4">
-                                                </div>
-                                                <!-- End -->
-
-                                                <div class="row">
-                                                    <div class="col-lg-9 mx-auto">
-                                                        <div class="bg-white rounded-lg shadow-sm p-5">
-                                                            <!-- Credit card form tabs -->
-                                                            <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
-                                                                <li class="nav-item">
-                                                                    <a data-toggle="pill" href="#nav-tab-card" class="nav-link active rounded-pill">
-                                                                        <i class="fa fa-credit-card"></i> Credit Card
-                                                                    </a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a data-toggle="pill" href="#nav-tab-paypal" class="nav-link rounded-pill">
-                                                                        <i class="fa fa-paypal"></i> Paypal
-                                                                    </a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a data-toggle="pill" href="#nav-tab-bank" class="nav-link rounded-pill">
-                                                                        <i class="fa fa-university"></i> Bank Transfer
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                            <!-- End -->
-
-
-                                                            <!-- Credit card form content -->
-                                                            <div class="tab-content">
-
-                                                                <!-- credit card info-->
-                                                                <div id="nav-tab-card" class="tab-pane fade show active">
-                                                                    <form role="form">
-                                                                        <div class="form-group">
-                                                                            <label for="username">Full name (On the card)</label>
-                                                                            <input type="text" name="username" placeholder="Le Thanh Tung" required class="form-control">
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <label for="cardNumber">Card number</label>
-                                                                            <div class="input-group">
-                                                                                <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
-                                                                                <div class="input-group-append">
-                                                                                    <span class="input-group-text text-muted">
-                                                                                  <i class="fa fa-cc-visa mx-1"></i>
-                                                                                  <i class="fa fa-cc-amex mx-1"></i>
-                                                                                  <i class="fa fa-cc-mastercard mx-1"></i>
-                                                                              </span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-sm-8">
-                                                                                <div class="form-group">
-                                                                                    <label><span class="hidden-xs">Expiration</span></label>
-                                                                                    <div class="input-group">
-                                                                                        <input type="number" placeholder="MM" name="" class="form-control" required>
-                                                                                        <input type="number" placeholder="YY" name="" class="form-control" required>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-sm-4">
-                                                                                <div class="form-group mb-4">
-                                                                                    <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
-                                                                                  <i class="fa fa-question-circle"></i>
-                                                                              </label>
-                                                                                    <input type="text" required class="form-control">
-                                                                                </div>
-                                                                            </div>
-
-
-
-                                                                        </div>
-                                                                        <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
-                                                                    </form>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="p-2">
+                                                                <img src="img/product/ceiling-fans-4.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                                <div class="ml-3 d-inline-block align-middle">
+                                                                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Royal Aura F007</a></h5><span class="text-muted font-weight-normal font-italic">Ceiling Fan</span>
                                                                 </div>
-                                                                <!-- End -->
-
-                                                                <!-- Paypal info -->
-                                                                <div id="nav-tab-paypal" class="tab-pane fade">
-                                                                    <p>Paypal is easiest way to pay online</p>
-                                                                    <p>
-                                                                        <button type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Log into my Paypal</button>
-                                                                    </p>
-                                                                    <p class="payment-note">Your account has 2-layer security, we do not save any information about you</p>
-                                                                </div>
-                                                                <!-- End -->
-
-                                                                <!-- bank transfer info -->
-                                                                <div id="nav-tab-bank" class="tab-pane fade">
-                                                                    <h6>Bank account details</h6>
-                                                                    <dl>
-                                                                        <dt>Bank</dt>
-                                                                        <dd> THE WORLD BANK</dd>
-                                                                    </dl>
-                                                                    <dl>
-                                                                        <dt>Account number</dt>
-                                                                        <dd>7775877975</dd>
-                                                                    </dl>
-                                                                    <dl>
-                                                                        <dt>Account Balance</dt>
-                                                                        <dd>1,000,000,000 USD</dd>
-                                                                    </dl>
-                                                                    <p class="payment-note">Account balances are accepted for worldwide payment</p>
-                                                                </div>
-                                                                <!-- End -->
                                                             </div>
-                                                            <!-- End -->
-
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                            <td class="align-middle"><strong>$ 1.899.00</strong></td>
+                                                            <td class="align-middle"><strong>1</strong></td>
+                                                            <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+                                                            </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- End -->
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="p-3 bg-white rounded shadow-sm">
+                                        <div>
+                                            <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
+                                            <div class="p-4">
+                                                <p class="font-italic mb-4">Shipping and additional costs are calculated based on values you have entered.</p>
+                                                <ul class="list-unstyled mb-4">
+                                                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong>
+                                                        <strong>$ 4.798.00</strong></li>
+                                                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping and handling</strong>
+                                                        <strong>$ 10.00</strong></li>
+                                                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong>
+                                                        <strong>$ 0.00</strong></li>
+                                                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+                                                        <h5 class="font-weight-bold">$ 4.808.00</h5>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <a href="product-list.html"><button type="button" class="btn btn-primary">Accept Payment</button></a>
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="customer-info" role="tabpanel" aria-labelledby="customer-info-tab">
+                        <div class="container mt-3 mb-3">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <h3 class="mb-4">Input your info</h3>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Phone</label>
+                                            <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="provincial">Provincial/City</label>
+                                            <select class="form-control" id="provincial">
+                                            <option>Ha Noi</option>
+                                            <option>Nghe An</option>
+                                            <option>Bac Giang</option>
+                                            <option>Thai Nguyen</option>
+                                            <option>Hue</option>
+                                            <option>Other</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="district">District</label>
+                                            <select class="form-control" id="district">
+                                            <option>Thanh Xuan</option>
+                                            <option>Dong Da</option>
+                                            <option>Hoan Kiem</option>
+                                            <option>Ba Dinh</option>
+                                            <option>Hai Ba Trung</option>
+                                            <option>Other</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="ward">Ward</label>
+                                            <select class="form-control" id="ward">
+                                            <option>Khuong Dinh</option>
+                                            <option>Nhan Chinh</option>
+                                            <option>Kim Giang</option>
+                                            <option>Other</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="address">Address</label>
+                                            <textarea class="form-control" id="address" rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="type-address">Address type</label>
+                                            <div class="form-check form-check-inline mx-4">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Home</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Company</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="order-confirm" role="tabpanel" aria-labelledby="order-confirm-tab">
+                        <div class="container mt-3 mb-3">
+                            <div class="row justify-content-center mb-3">
+                                <h5>If you have already filled in the information, press the button to confirm payment!</h5>
+                            </div>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Confirm Payment
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -421,10 +365,143 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-maxwidth" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Payment Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container py-5">
+
+                        <!-- For demo purpose -->
+                        <div class="row mb-4">
+                        </div>
+                        <!-- End -->
+
+                        <div class="row">
+                            <div class="col-lg-9 mx-auto">
+                                <div class="bg-white rounded-lg shadow-sm p-5">
+                                    <!-- Credit card form tabs -->
+                                    <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
+                                        <li class="nav-item">
+                                            <a data-toggle="pill" href="#nav-tab-card" class="nav-link active rounded-pill">
+                                                <i class="fa fa-credit-card"></i> Credit Card
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-toggle="pill" href="#nav-tab-paypal" class="nav-link rounded-pill">
+                                                <i class="fa fa-paypal"></i> Paypal
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-toggle="pill" href="#nav-tab-bank" class="nav-link rounded-pill">
+                                                <i class="fa fa-university"></i> Bank Transfer
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- End -->
+
+
+                                    <!-- Credit card form content -->
+                                    <div class="tab-content">
+
+                                        <!-- credit card info-->
+                                        <div id="nav-tab-card" class="tab-pane fade show active">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label for="username">Full name (On the card)</label>
+                                                    <input type="text" name="username" placeholder="Le Thanh Tung" required class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="cardNumber">Card number</label>
+                                                    <div class="input-group">
+                                                        <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text text-muted">
+                                                          <i class="fa fa-cc-visa mx-1"></i>
+                                                          <i class="fa fa-cc-amex mx-1"></i>
+                                                          <i class="fa fa-cc-mastercard mx-1"></i>
+                                                      </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-8">
+                                                        <div class="form-group">
+                                                            <label><span class="hidden-xs">Expiration</span></label>
+                                                            <div class="input-group">
+                                                                <input type="number" placeholder="MM" name="" class="form-control" required>
+                                                                <input type="number" placeholder="YY" name="" class="form-control" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group mb-4">
+                                                            <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
+                                                          <i class="fa fa-question-circle"></i>
+                                                      </label>
+                                                            <input type="text" required class="form-control">
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                                <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
+                                            </form>
+                                        </div>
+                                        <!-- End -->
+
+                                        <!-- Paypal info -->
+                                        <div id="nav-tab-paypal" class="tab-pane fade">
+                                            <p>Paypal is easiest way to pay online</p>
+                                            <p>
+                                                <button type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Log into my Paypal</button>
+                                            </p>
+                                            <p class="payment-note">Your account has 2-layer security, we do not save any information about you</p>
+                                        </div>
+                                        <!-- End -->
+
+                                        <!-- bank transfer info -->
+                                        <div id="nav-tab-bank" class="tab-pane fade">
+                                            <h6>Bank account details</h6>
+                                            <dl>
+                                                <dt>Bank</dt>
+                                                <dd> THE WORLD BANK</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Account number</dt>
+                                                <dd>7775877975</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Account Balance</dt>
+                                                <dd>1,000,000,000 USD</dd>
+                                            </dl>
+                                            <p class="payment-note">Account balances are accepted for worldwide payment</p>
+                                        </div>
+                                        <!-- End -->
+                                    </div>
+                                    <!-- End -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="product-list.html"><button type="button" class="btn btn-primary">Accept Payment</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- END MAIN -->
-
-
 
     <!-- Footer -->
     <footer class="page-footer">
@@ -540,7 +617,5 @@
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script> -->
 </body>
-
-
 
 </html>

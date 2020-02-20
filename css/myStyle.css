@@ -517,6 +517,26 @@ html {
 /* END Our Team */
 
 
+/* my-cart-shipping */
+
+.my-cart-shipping .num-step {
+    color: white;
+    background-color: #f90;
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 3px 2px 3px #999;
+    margin-right: 5px;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+
+/* END my-cart-shipping */
+
+
 /* END Hieu iceTea */
 
 
