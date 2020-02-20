@@ -260,9 +260,16 @@ html {
     background-color: #4db6ac;
 }
 
-.footer-title a,
+.footer-title a {
+    color: white;
+}
+
 .footer-copyright a {
     color: #4f4f4f;
+}
+
+.footer-title a,
+.footer-copyright a {
     text-decoration: none !important;
     -webkit-transition: 0.3s all ease;
     -moz-transition: 0.3s all ease;
@@ -272,6 +279,7 @@ html {
 }
 
 .footer-title a:hover {
+    color: white;
     font-size: 30px;
     margin: -20px -6px;
 }
