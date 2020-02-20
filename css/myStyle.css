@@ -118,7 +118,17 @@ html {
 /* END Xử lý menu nav bar */
 
 
-/* END Xử lý menu nav bar */
+/* Xử lý slide */
+
+.my-slide .carousel-inner h5,
+.my-slide .carousel-inner p {
+    /* text-shadow: 3px 2px 1px #17bebb; */
+    text-shadow: 1.1px 1.1px 0.5px #999;
+    -webkit-text-stroke: 0.1px #17bebb;
+}
+
+
+/* ENDXử lý slide */
 
 
 /* Xử lý list-product-title */
